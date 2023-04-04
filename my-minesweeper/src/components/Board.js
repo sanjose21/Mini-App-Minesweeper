@@ -240,14 +240,16 @@ class Board extends React.Component {
 
     render() {
         const { gameState } = this.state;
+        const remainingMines = this.props.mines - gameState.flagsUsed;
         return (
             <div className="Board">
                 <div className="game-info">
                     <div className="game-info-item">
                         Flags: {gameState.flagsUsed}/{this.props.mines}
                     </div>
-                    <div className="game-info-item">Time: {gameState.elapsedTime}</div>
+                    <h2 className="game-info-item">Time: {gameState.elapsedTime}</h2>
                 </div>
+                <h3 className="remaining-mines">Remaining Mines: {remainingMines}</h3>
                 {this.renderCells()}
             </div>
         );

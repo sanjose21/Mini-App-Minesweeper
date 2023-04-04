@@ -5,7 +5,7 @@ import './Cell.css';
 class Cell extends React.Component {
     render() {
         const { cell, onClick, size } = this.props;
-        const cellSize = 300 / size;
+        const cellSize = 400 / size;
         const cellStyle = {
             width: `${cellSize}vmin`,
             height: `${cellSize}vmin`,
