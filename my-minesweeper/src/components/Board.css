@@ -1,0 +1,20 @@
+.Board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 columns */
+  grid-template-rows: repeat(10, 1fr); /* 10 rows */
+  grid-gap: 1px; /* Add gap between cells */
+  margin-top: 20px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+}
+
+.text-center {
+  margin-bottom: 20px;
+}

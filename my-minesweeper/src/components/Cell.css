@@ -1,0 +1,70 @@
+.cell {
+    background-color: #d4d4d4;
+    border: 1px solid #b6b6b6;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+.cell:hover {
+    background-color: #d4d4d4;
+}
+
+.cell.revealed {
+    background-color: #3902fd;
+}
+
+.cell.revealed:hover {
+    background-color: #fa0505;
+}
+
+.cell.mine {
+    background-color: #d4d4d4;
+    color: #fff;
+}
+
+.cell.flagged {
+    background-color: #fdcb6e;
+}
+
+.mine-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mine-overlay::after {
+    content: "💣";
+    font-size: 50px;
+    color: #fff;
+}
+
+.flag-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-overlay::after {
+    content: "🚩";
+    font-size: 50px;
+    color: #fff;
+}
